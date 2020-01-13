@@ -1,0 +1,23 @@
+.wrap {
+    position: relative;
+}
+.image {
+    display: block;
+
+}
+
+.category {
+    position: absolute;
+    padding: 7px 9px;
+    top: 20px;
+    left: 23px;
+    background: #fff;
+    color: #000000;
+    font-family: "ProximaNova-RegularCondensed";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 7px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    text-decoration: none;
+}

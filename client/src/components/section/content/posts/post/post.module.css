@@ -1,0 +1,10 @@
+.wrap {
+    width: 790px;
+     
+}
+
+.wrapContent {
+    padding: 28px 31px 30px 35px;  
+    border: 1px solid #dddddd;
+    border-top: none;
+}

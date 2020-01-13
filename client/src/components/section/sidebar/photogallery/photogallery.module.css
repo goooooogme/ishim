@@ -1,0 +1,30 @@
+.wrap {
+    padding: 26px 30px 25px 30px;
+    border: 1px solid #dddddd;
+}
+
+.title {
+    padding-bottom: 22px;
+    
+    color: #000000;
+    font-family: "ProximaNova-RegularCondensed";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 80px 80px;
+}
+
+.all {
+    color: #000000;
+    font-family: "ProximaNova-RegularCondensed";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    text-decoration: underline;
+}

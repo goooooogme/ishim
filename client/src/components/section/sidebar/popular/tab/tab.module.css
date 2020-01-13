@@ -1,0 +1,17 @@
+.wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab {
+    color: #dddddd;
+    font-family: "ProximaNova-RegularCondensed";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-decoration: none;
+}
+
+.active {
+    color: #000000;
+}
