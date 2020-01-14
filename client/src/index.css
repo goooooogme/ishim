@@ -16,7 +16,7 @@ code {
     monospace;
 }
 
-.hr {
+hr {
   border-color: #dddddd;
   opacity: 0.2;
 }

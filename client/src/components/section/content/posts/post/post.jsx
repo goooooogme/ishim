@@ -7,7 +7,7 @@ import p from './post.module.css'
 const Post = () => {
     return (
         <div className={p.wrap}>
-            <Header />
+            <Header/>
             <div className={p.wrapContent}>
                 <Content />
                 <Footer />

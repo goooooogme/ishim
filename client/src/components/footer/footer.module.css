@@ -1,0 +1,27 @@
+.wrap {
+    width: 1141px;
+    margin: 31px auto 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.copyright {
+    color: #000000;
+    font-family: 'Heuristica-Regular';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-decoration: none;
+}
+
+.item {
+    color: #000000;
+    font-family: "ProximaNova-RegularCondensed";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-right: 38px;
+}
