@@ -1,10 +1,10 @@
 import React from 'react'
 import Posts from './posts/posts.jsx'
 
-const Content = () => {
+const Content = ({posts}) => {
     return (
         <div>
-            <Posts />
+            <Posts posts={posts}/>
         </div>
     )
 }

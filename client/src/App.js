@@ -22,11 +22,11 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props);
+  
     return (
       <div className="wrap">
         <Header />
-        <Section />
+        <Section posts={this.props.posts.posts}/>
         <hr />
         <Footer />
       </div>
