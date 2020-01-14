@@ -13,8 +13,8 @@ const Navigation = () => {
                 <a href="#" className={n.navLink}>Фотогалерея</a>
             </nav>
             <div className={n.signAndSearch}>
-                <a href="#" className={`${n.login} ${n.navLink}`}><i class="fa fa-user"></i> Войти</a>
-                <a href="#" className={`${n.search} ${n.navLink}`}><i class="fa fa-search"></i> Поиск</a>
+                <a href="#" className={`${n.login} ${n.navLink}`}><i className="fa fa-user"></i> Войти</a>
+                <a href="#" className={`${n.search} ${n.navLink}`}><i className="fa fa-search"></i> Поиск</a>
             </div>
         </div>
     )

@@ -12,9 +12,9 @@ const Top = () => {
                 </div>
             </div>
             <div className={t.social}>
-                <a href="#" className={t.link}> <i class="fa fa-twitter"></i></a>
-                <a href="#" className={t.link}> <i class="fa fa-facebook"></i></a>
-                <a href="#" className={t.link}> <i class="fa fa-instagram"></i></a>
+                <a href="#" className={t.link}> <i className="fa fa-twitter"></i></a>
+                <a href="#" className={t.link}> <i className="fa fa-facebook"></i></a>
+                <a href="#" className={t.link}> <i className="fa fa-instagram"></i></a>
             </div>
         </div>
     )
