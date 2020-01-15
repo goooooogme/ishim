@@ -3,11 +3,14 @@ import Header from './components/header/header.jsx'
 import Section from './components/section/section.jsx'
 import Footer from './components/footer/footer.jsx'
 import './App.css'
+import 'antd/dist/antd.css'; 
 import axios from 'axios'
 import {connect} from 'react-redux'
 import ReactPaginate from 'react-paginate';
-import { Pagination } from 'antd';
+import { Pagination} from 'antd';
 import { BrowserRouter, } from 'react-router-dom';
+import Content from './components/section/content/content.jsx'
+import Sidebar from './components/section/sidebar/sidebar.jsx'
 
 class App extends Component {
 
@@ -47,14 +50,21 @@ class App extends Component {
     const url = document.location.href;
     const index = url.indexOf('page=')+5;
     const id = url.slice(index)
+    console.log(id);
     return (
       <BrowserRouter>
         <div className="wrap">
           <Header />
-          <Section posts={posts} countPage={page/5} getData={this.getData}/>
-          <Pagination defaultCurrent={id} total={page} defaultPageSize={5} onChange={this.onChange}/>
+          <div className="section">
+            <div className="content">
+              <Content posts={posts} countPage={page/5} getData={() => this.getData()}/>
+              <Pagination defaultCurrent={+id} total={page} defaultPageSize={5} onChange={this.onChange}/>
+            </div>
+            <Sidebar />
+          </div>
           <hr />
           <Footer />
+          
         </div>
       </BrowserRouter>
     );

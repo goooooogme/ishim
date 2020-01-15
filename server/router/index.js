@@ -21,7 +21,10 @@ router.get('/', async (req,res) => {
 router.get('/page=:id', async (req, res) => {
     const page = req.params.id;
     const beforePost = page*5 - 5;
+   // const post = await Post.find();
+  //  console.log(post.reverse())
     const posts = await Post.find().limit(5).skip(beforePost);
+
     const count = await Post.find();
     const postInfo = {
         countPage: count.length,
