@@ -3,8 +3,7 @@ import Post from './post/post.jsx'
 
 
 const Posts = ({posts}) => {
-    console.log(posts)
-    const post = posts.map((data) => <Post title={data.title} text={data.text} category={data.category} data={data.data}/>)
+    const post = posts.map((data) => <Post title={data.title} text={data.text} category={data.category} data={data.data} comments={data.comments}/>)
     return (
         <div>
             {post}

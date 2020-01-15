@@ -5,12 +5,15 @@ const bodyparser = require('body-parser');
 const index = require('./router/index');
 const add = require('./router/add')
 
+
 const app = express();
 
 app.use(bodyparser.urlencoded({extended:false}));
 app.use(bodyparser.json())
 app.use('/', index);
 app.use('/', add);
+
+
 
 const PORT = process.env.PORT || 4000;
 

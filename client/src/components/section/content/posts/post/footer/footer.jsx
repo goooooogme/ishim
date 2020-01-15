@@ -1,11 +1,11 @@
 import React from 'react'
 import f from './footer.module.css'
 
-const Footer = ({data}) => {
+const Footer = ({data, comments}) => {
     return (
         <div>
             <span className={f.footer}><i className="fa fa-calendar"></i> {data}</span>
-            <span className={f.footer}><i className="fa fa-comments"></i> 25 комментариев</span>
+            <span className={f.footer}><i className="fa fa-comments"></i> {comments.length} комментариев</span>
         </div>
     )   
 }
