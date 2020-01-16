@@ -4,6 +4,7 @@ const bodyparser = require('body-parser');
 
 const index = require('./router/index');
 const add = require('./router/add')
+const addComment = require('./router/addComment')
 
 
 const app = express();
@@ -12,6 +13,7 @@ app.use(bodyparser.urlencoded({extended:false}));
 app.use(bodyparser.json())
 app.use('/', index);
 app.use('/', add);
+app.use('/', addComment)
 
 
 

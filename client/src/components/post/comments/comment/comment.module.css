@@ -1,0 +1,29 @@
+
+.comments {
+    text-align: left;
+}
+
+.comment {
+    margin: 20px;
+}
+
+.topComments {
+    display: flex;
+    align-items: center;
+}
+
+.textComments {
+    color: #111;
+    font-size: 15px;
+    line-height: 1.46;
+}
+
+.user {
+    width: 20px;
+    height: 20px;;
+}
+
+.login {
+    font-weight: 700;
+    margin: 0 5px;
+}

@@ -6,7 +6,10 @@ const post = mongoose.Schema({
     title: String,
     text: String,
     category: String,
-    data: String,
+    data: {
+        type: Date,
+        default: Date.now
+    },
     comments: Array
 })
 

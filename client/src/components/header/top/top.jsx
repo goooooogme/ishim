@@ -8,7 +8,7 @@ const Top = () => {
                 <img src="./logo.png" alt="logo" className={t.image}/>
                 <div className={t.city}>
                     <h1 className={t.cityName}>Город ишим</h1>
-                    <p className={t.portalName}>эллектроный журнал</p>
+                    <p className={t.portalName}>электронный журнал</p>
                 </div>
             </div>
             <div className={t.social}>

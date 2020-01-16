@@ -1,15 +1,16 @@
 const initialState = {
-    page: null
+    post: []
 }
 
-export default function(state = initialState, action) {
+export default function(state=initialState, action) {
     switch (action.type) {
-        case 'GET_PAGE': 
+        case "GET_POST": 
             return {
                 ...state,
-                page: action.payload
+                post: action.payload
             };
         default:
             return state;
+        
     }
 }

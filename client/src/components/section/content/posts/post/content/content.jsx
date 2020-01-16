@@ -1,10 +1,11 @@
 import React from 'react'
 import c from './content.module.css'
 
-const Content = ({title, text}) => {
+const Content = ({title, text, id}) => {
+    
     return (
         <div className={c.wrap}>
-            <a href="#" className={c.title}>{title}</a>
+            <a href={`/${id}`} className={c.title}>{title}</a>
             <p className={c.text}>
                 {text}
             </p>

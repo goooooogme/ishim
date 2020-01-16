@@ -1,0 +1,19 @@
+.wrap {
+    width: 100%;
+    max-width: 1141px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+
+
+.text {
+    text-align: justify;
+}
+
+
+.addComment form {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
