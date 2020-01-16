@@ -20,9 +20,9 @@ const Post = ({post}) => {
                 </p>
                 <Comments comments={comments || []}/>
                 <div className={p.addComment}>
-                    <form method="POST" action={url}>
-                            <input type="text" required/>
-                            <textarea required></textarea>
+                    <form method="POST" >
+                            <input type="text" required name="author"/>
+                            <textarea required name="text"></textarea>
                             <input type="submit" />
                     </form>
                 </div>
