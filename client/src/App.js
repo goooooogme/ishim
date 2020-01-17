@@ -20,14 +20,24 @@ class App extends Component {
   }
 
   async componentWillMount() {
-    //  const url = document.location.href;
-    //  const index = url.indexOf('page=')+5;
-    //  const id = url.slice(index)
-    //  this.getData(id);
-    const url = document.location.href;
-    const index = url.indexOf('post/')+5;
-    const id = url.slice(index)
-    await this.getOnePost(id);
+     const url = document.location.href;
+     const index = url.indexOf(':3000/')+6;
+     const check = url.slice(index, index+4);
+     console.log(check);
+     switch (check) {
+      case "page": {
+        const index = url.indexOf('page=')+5;
+        const id = url.slice(index)
+        this.getData(id);
+       
+      };
+      break;
+      case "post": {
+        await this.getOnePost(url.slice(url.indexOf('post/')+5));
+      };
+      break;
+     }
+
   }
 
   async getData(page){
@@ -66,22 +76,27 @@ class App extends Component {
     const id = url.slice(index)
  
     const postInfo = post[0] || [];
-
+    console.log(this.props)
     return (
       <BrowserRouter>
         <div className="wrap">
           <Header />
           <hr />
           
-          <Route path="/post/" render ={ () => <Post post={postInfo}/>} />
-         
-          {/*<div className="section">
+          <Route path="/post/:id" render ={ () => <Post post={postInfo}/>} />
+
+
+
+          <div className="section">
             <div className="content">
-              <Content posts={posts} countPage={page/5} getData={() => this.getData()}/>
-              <Pagination defaultCurrent={+id} total={page} defaultPageSize={5} onChange={this.onChange}/>
+              <Route path="/page=:id" render ={ () => <Content posts={posts} countPage={page/5} getData={() => this.getData()}/>} />
+              <Route path="/page=:id" render ={ () => <Pagination defaultCurrent={+id} total={page} defaultPageSize={5} onChange={this.onChange}/>} />
+              
+              
             </div>
-            <Sidebar />
-            </div>*/}
+            <Route path="/page=:id" render ={ () => <Sidebar />} />
+            
+            </div>
           <hr />
           <Footer />
           

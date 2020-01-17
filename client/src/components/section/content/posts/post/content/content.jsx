@@ -5,7 +5,7 @@ const Content = ({title, text, id}) => {
     
     return (
         <div className={c.wrap}>
-            <a href={`/${id}`} className={c.title}>{title}</a>
+            <a href={`/post/${id}`} className={c.title}>{title}</a>
             <p className={c.text}>
                 {text}
             </p>
